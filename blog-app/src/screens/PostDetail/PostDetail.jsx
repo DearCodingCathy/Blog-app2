@@ -34,8 +34,8 @@ class PostDetail extends Component {
             <div className="price">{post.author}</div>
             <div className="description">{post.description}</div>
             <div className="button-container">
-              <button className="edit-button"><Link className="edit-link" to={`/posts/${post.id}/edit`}>Edit</Link></button>
-              <button className="delete-button" onClick={() => deletePost(post.id)}>Delete</button>
+              <button className="edit-button"><Link className="edit-link" to={`/posts/${post._id}/edit`}>Edit</Link></button>
+              <button className="delete-button" onClick={() => deletePost(post._id)}>Delete</button>
             </div>
           </div>
         </div>
